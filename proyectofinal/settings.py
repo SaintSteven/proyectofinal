@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'condominiofeliz.apps.CondominiofelizConfig',
+    'django.contrib.humanize',
 ]
 
 MIDDLEWARE = [

@@ -1,6 +1,9 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.views.generic import TemplateView
+from django.views.generic.list import ListView
+from django.views.generic import DetailView
+from .models import Proprietor, Administrator, Expense, Site
 
 # Create your views here.
 
@@ -21,10 +24,10 @@ class Link_neighborhood_view(TemplateView):
     def get(self, request):
         return render(request, self.template_name)
 
-class Propiertor_expense_view(TemplateView):
+class Propiertor_expense_view(ListView):
+    model = Expense
     template_name = 'propietario-gastos.html'
-    def get(self, request):
-        return render(request, self.template_name)
+    queryset = Expense.objects.order_by('expense_price')
 
 class Propiertor_site_view(TemplateView):
     template_name = 'propietario-reservas.html'
