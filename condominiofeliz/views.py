@@ -61,3 +61,8 @@ class Administrator_site_view(TemplateView):
     def get(self, request):
         return render(request, self.template_name)
 
+class Hola(TemplateView):
+    template_name = 'holahola.html'
+    def get(self, request):
+        return render(request, self.template_name)
+

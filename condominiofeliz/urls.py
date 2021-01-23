@@ -15,4 +15,6 @@ urlpatterns = [
     path('administrador/lista', views.Administrator_list_view.as_view(), name="administrador-lista"),
     path('administrador/gastos', views.Administrator_expense_view.as_view(), name="administrador-gastos"),
     path('administrador/reservas', views.Administrator_site_view.as_view(), name="administrador-reservas"),
+
+    path('holachao', views.Hola.as_view()),
 ]

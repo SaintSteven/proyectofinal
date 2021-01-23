@@ -1,5 +1,5 @@
 html{
-    background: url("background2.jpg") no-repeat;
+    background: url('../img/background2.jpg') no-repeat;
 	background-size: cover;
     min-height: 100%;
 }
@@ -15,7 +15,7 @@ body{
 
 #registration-form .image{
 	float:left;
-	background-image: url("vecindario.png");
+	background-image: url('../img/vecindario.png');
 	height: 500px;
 	width: 50%;
 	background-size: cover;

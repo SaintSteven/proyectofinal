@@ -6,14 +6,15 @@
     <meta charset="utf-8">
     <title>Registro de vecindario - Condominio Feliz</title>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="style3.css">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'app/css/style3.css' %}">
 </head>
 
 <body>
     <div class="container" id="registration-form">
         <div class="image"></div>
         <div class="frm">
-            <h1>formulario de registro de vecindario</h1>
+            <h1>Formulario de registro de vecindario</h1>
             <form>
                 <div class="form-group">
                     <label>Nombre del vecindario:</label>
